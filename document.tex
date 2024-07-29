@@ -6,6 +6,7 @@
 \usepackage{amsthm}
 \usefonttheme[onlymath]{serif}
 \usecolortheme[named=blue]{structure}
+\usepackage{graphicx}
 
 
 \setbeamercolor{block title}{use=structure,fg=white,bg=structure.fg!75!black}
@@ -130,7 +131,17 @@
 		\begin{center}
 			I still don't understand this topic right now,\\ it requires background in image processing, which I'm not familiar with
 		\end{center}
+		% TODO: \usepackage{graphicx} required
+		\begin{figure}
+			\centering
+			\includegraphics[width=0.7\linewidth]{screenshot001}
+			\centering
+			\includegraphics[width=0.7\linewidth]{screenshot002}
+		\end{figure}
+		
 	\end{frame}
+	
+	\section{Validity and Completeness of Explanation Function}
 	
 	\begin{frame}[t]{Properties of Explanation Functions}{Validity}
 		\begin{definition}[Valid Explanation Functions]
@@ -143,8 +154,6 @@
 			where $\ell$ is a loss function.
 		\end{definition}
 	\end{frame}
-	
-	\section{Validity and Completeness of Explanation Function}
 	
 	\begin{frame}[t]{Properties of Explanation Functions}{Completeness}
 		\begin{definition}[Complete Explanation Functions]
@@ -171,13 +180,30 @@
 			Then, $g$ is $(\epsilon, \alpha)$-complete with respect to $h$, with $\alpha:=\frac{\sqrt{1+H(p)\left(H(p)-\epsilon-2 \sqrt{\epsilon_0}\right)}-1}{H(p)}$ and any $\epsilon>0$ that satisfies, $H(p)>\epsilon+2 \sqrt{\epsilon_0}$.\\
 			In particular, if $p=1 / 2$, we have: $\alpha=\sqrt{2-\epsilon-2 \sqrt{\epsilon_0}}-1$.
 		\end{theorem}
+		Need a lot of lemmas from other works
 	\end{frame}
-	Need a lot of lemmas from other works
+	
 	
 	\section{Arithmetic of Explanations}
 
 	\begin{frame}{Intersection and Union of RVs}
-		content...
+		\begin{definition}
+			Let $x\sim\mathcal{D}$ on $\mathcal{X}$, a constant $\epsilon>0$ and\\
+			given two functions $f_1:\mathcal{X}\to\mathcal{X}_1$ and $f_2:\mathcal{X}\to\mathcal{X}_2$.\\
+			If there are two invertible functions $r_1:\mathcal{X}_1\to\mathcal{V}_1$ and $r_2:\mathcal{X}_2\to\mathcal{V}_2$
+			such that
+			\begin{align*}
+				r_1(f_1(x)) &= (e_1(x),u(x))\\
+				r_2(f_2(x)) &= (e_2(x),u(x)),
+			\end{align*}
+			where mutual information $I(e_i(x);f_j(x))\leqslant\epsilon$ for $i\neq j\in\{1,2\}$
+			\begin{itemize}
+				\item the RV $u(x)$ is called \underline{$\epsilon$-intersection} of $f_1$ and $f_2$
+				\item the RV $(e_1(x), u(x), e_2(x))$ is \underline{$\epsilon$-union} of $f_1$ and $f_2$
+			\end{itemize}
+		\end{definition}
+		(Still don't get its idea why define like this)\\
+		(this work as well proved that they are unique up to invertible transformation)
 	\end{frame}
 	
 \end{document}
