@@ -189,21 +189,48 @@
 	\begin{frame}{Intersection and Union of RVs}
 		\begin{definition}
 			Let $x\sim\mathcal{D}$ on $\mathcal{X}$, a constant $\epsilon>0$ and\\
-			given two functions $f_1:\mathcal{X}\to\mathcal{X}_1$ and $f_2:\mathcal{X}\to\mathcal{X}_2$.\\
-			If there are two invertible functions $r_1:\mathcal{X}_1\to\mathcal{V}_1$ and $r_2:\mathcal{X}_2\to\mathcal{V}_2$
+			given two explanation functions $g_1:\mathcal{Z}\to\mathcal{G}_1$ and $g_2:\mathcal{Z}\to\mathcal{G}_2$.\\
+			If there are two invertible functions $r_1:\mathcal{G}_1\to\mathcal{V}_1$ and $r_2:\mathcal{G}_2\to\mathcal{V}_2$
 			such that
 			\begin{align*}
-				r_1(f_1(x)) &= (e_1(x),u(x))\\
-				r_2(f_2(x)) &= (e_2(x),u(x)),
+				r_1(g_1(x)) &= (e_1(x),u(x))\\
+				r_2(g_2(x)) &= (e_2(x),u(x)),
 			\end{align*}
-			where mutual information $I(e_i(x);f_j(x))\leqslant\epsilon$ for $i\neq j\in\{1,2\}$
+			where mutual information $I(e_i(x);g_j(x))\leqslant\epsilon$ for $i\neq j\in\{1,2\}$
 			\begin{itemize}
-				\item the RV $u(x)$ is called \underline{$\epsilon$-intersection} of $f_1$ and $f_2$
-				\item the RV $(e_1(x), u(x), e_2(x))$ is \underline{$\epsilon$-union} of $f_1$ and $f_2$
+				\item the RV $u(x)$ is called \underline{$\epsilon$-intersection} of $g_1$ and $g_2$
+				\item the RV $(e_1(x), u(x), e_2(x))$ is \underline{$\epsilon$-union} of $g_1$ and $g_2$
 			\end{itemize}
 		\end{definition}
 		(Still don't get its idea why define like this)\\
 		(this work as well proved that they are unique up to invertible transformation)
+	\end{frame}
+	
+	\begin{frame}{Intersection and Union of RVs}{Validity of intersection}
+		
+		\begin{theorem}
+			Let $h: \mathbb{R}^n \rightarrow \mathcal{Y}$ be a model, and $g_1, g_2: \mathcal{Z} \rightarrow G$ two EFs.\\
+			Assume that $\mathcal{Y}=\{ \pm 1\}$, and we let $u(x, h(x))$ be $\epsilon$-intersection of $g_1(x, h(x))$ and $g_2(x, h(x))$.\\
+			Assume that $g_1$ is $\epsilon_0$-valid (w.r.t $h$) and $g_2$ is $(\epsilon, \alpha)$-complete (w.r.t $h$).\\
+			Then, $u$ is $\epsilon_1$-valid (w.r.t $h$ ), for $$
+			\epsilon_1:=1-\frac{2^{-\epsilon_0-2 \sqrt{\epsilon_0}-H(h(x))}}{1-\alpha}
+			$$
+		\end{theorem}
+		This result comes from the work of Feder and Merhav (1994)
+		\begin{lemma}[Feder and Merhav 1994]
+		Let $X$ and $Y$ be two discrete random variables taking values from $\mathcal{S}_1$ and $\mathcal{S}_2$ (resp.). Then, there is a function $t: \mathcal{S}_2 \rightarrow \mathcal{S}_2$, such that:
+			$$
+			\mathbb{P}_{X, Y}[X=t(Y)] \leq 1-2^{I(X ; Y)-H(X)}
+			$$
+		\end{lemma}
+	\end{frame}
+	
+	\begin{frame}{Intersection and Union of RVs}{Validity and Completeness of union}
+		\begin{figure}
+			\centering
+			\includegraphics[width=0.9\linewidth]{screenshot003}
+		\end{figure}
+		
 	\end{frame}
 	
 \end{document}
