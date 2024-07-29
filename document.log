@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.6.5)  30 JUL 2024 00:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.6.5)  30 JUL 2024 00:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -809,7 +809,7 @@ erif.sty)
 (C:\Users\yamch\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamercolortheme
 structure.sty)
 LaTeX Font Info:    Trying to load font information for T1+lmss on input line 3
-3.
+4.
 
 (C:\Users\yamch\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmss.fd
 File: t1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
@@ -822,24 +822,24 @@ File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
 ) (document.aux)
 \openout1 = `document.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -901,7 +901,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 fg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Package hyperref Info: Link coloring OFF on input line 33.
+Package hyperref Info: Link coloring OFF on input line 34.
  (document.out) (document.out)
 \@outlinefile=\write5
 \openout5 = `document.out'.
@@ -930,50 +930,52 @@ Dictionary: translator-numbers-dictionary, Language: English
 (C:\Users\yamch\AppData\Local\Programs\MiKTeX\tex/latex/translator\translator-t
 heorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
-) (document.nav) (document.toc) [1
+) (document.nav) [1
 
 {C:/Users/yamch/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/yamc
-h/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}] [2] (document.to
-c) [3
+h/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}] (document.toc) [
+2
+
+] (document.toc) [3
 
 ]
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 5
-3.
+6.
 
 (C:\Users\yamch\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 5
-3.
+6.
 
 (C:\Users\yamch\AppData\Local\Programs\MiKTeX\tex/latex/lm\omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-53.
+56.
 
 (C:\Users\yamch\AppData\Local\Programs\MiKTeX\tex/latex/lm\omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-53.
+56.
 
 (C:\Users\yamch\AppData\Local\Programs\MiKTeX\tex/latex/lm\omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 53.
+(Font)              <10> on input line 56.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 53.
+(Font)              <7> on input line 56.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 53.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 53.
+(Font)              <5> on input line 56.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 56.
 
 
 (C:\Users\yamch\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 53.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 56.
 
 
 (C:\Users\yamch\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
@@ -994,16 +996,16 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 ]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 109.
+(Font)              <12> on input line 112.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 109.
+(Font)              <8> on input line 112.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 109.
+(Font)              <6> on input line 112.
  [9
 
 ]
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 117.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 120.
  [10
 
 ] [11
@@ -1012,12 +1014,12 @@ LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10> not available
 <screenshot001.png, id=332, 758.08218pt x 201.00093pt>
 File: screenshot001.png Graphic file (type png)
 <use screenshot001.png>
-Package pdftex.def Info: screenshot001.png  used on input line 142.
+Package pdftex.def Info: screenshot001.png  used on input line 145.
 (pdftex.def)             Requested size: 278.83578pt x 73.93059pt.
 <screenshot002.png, id=334, 785.18344pt x 300.3722pt>
 File: screenshot002.png Graphic file (type png)
 <use screenshot002.png>
-Package pdftex.def Info: screenshot002.png  used on input line 142.
+Package pdftex.def Info: screenshot002.png  used on input line 145.
 (pdftex.def)             Requested size: 278.83578pt x 106.67183pt.
  [12
 
@@ -1035,7 +1037,7 @@ Package pdftex.def Info: screenshot002.png  used on input line 142.
 ] [18
 
 ]
-Overfull \vbox (3.94246pt too high) detected at line 226
+Overfull \vbox (3.94246pt too high) detected at line 229
  []
 
 [19
@@ -1044,7 +1046,7 @@ Overfull \vbox (3.94246pt too high) detected at line 226
 <screenshot003.png, id=548, 1091.57813pt x 274.02374pt>
 File: screenshot003.png Graphic file (type png)
 <use screenshot003.png>
-Package pdftex.def Info: screenshot003.png  used on input line 234.
+Package pdftex.def Info: screenshot003.png  used on input line 237.
 (pdftex.def)             Requested size: 358.50229pt x 89.99744pt.
  [20
 
@@ -1067,13 +1069,13 @@ Package rerunfilecheck Info: File `document.out' has not changed.
 (rerunfilecheck)             Checksum: E50A2230648CF96F75D96FB253B913AA;855.
  ) 
 Here is how much of TeX's memory you used:
- 21949 strings out of 474542
- 426570 string characters out of 5744447
+ 21948 strings out of 474542
+ 426551 string characters out of 5744447
  1935978 words of memory out of 5000000
- 43644 multiletter control sequences out of 15000+600000
+ 43643 multiletter control sequences out of 15000+600000
  605653 words of font info for 77 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,14n,123p,412b,581s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 128i,14n,123p,403b,581s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/yamch/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pf
 b><C:/Users/yamch/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pf
 b><C:/Users/yamch/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pf
@@ -1090,7 +1092,7 @@ Users/yamch/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy7.pfb><C:/U
 sers/yamch/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/ms
 am10.pfb><C:/Users/yamch/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
 nts/symbols/msbm10.pfb>
-Output written on document.pdf (20 pages, 599258 bytes).
+Output written on document.pdf (20 pages, 599201 bytes).
 PDF statistics:
  654 PDF objects out of 1000 (max. 8388607)
  45 named destinations out of 1000 (max. 500000)
