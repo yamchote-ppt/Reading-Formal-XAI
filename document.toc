@@ -1,0 +1,4 @@
+\beamer@sectionintoc {1}{Setting}{3}{0}{1}
+\beamer@sectionintoc {2}{Consistency and Explainability of Representation}{5}{0}{2}
+\beamer@sectionintoc {3}{Validity and Completeness of Explanation Function}{14}{0}{3}
+\beamer@sectionintoc {4}{Arithmetic of Explanations}{17}{0}{4}
