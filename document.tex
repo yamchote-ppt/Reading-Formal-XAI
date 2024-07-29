@@ -1,0 +1,103 @@
+\documentclass[10pt, aspectratio=169]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usefonttheme[onlymath]{serif}
+\usecolortheme[named=blue]{structure}
+
+\setbeamercolor{block title}{use=structure,fg=white,bg=structure.fg!75!black}
+\setbeamercolor{block body}{parent=normal text,use=block title,bg=block title.bg!8!bg}
+%\usepackage[scale=5]{beamerposter}
+
+\title{A Formal Approach to Explainability}
+\subtitle{(by Lior Wolf, Tomer Galanti, and Tamir Hazan)}
+\date{\today}
+\author{Phaphontee Yamchote}
+
+\begin{document}
+	\titlepage
+	\begin{frame}[noframenumbering,plain]{Outline}
+		\tableofcontents
+	\end{frame}
+	\begin{frame}{Setting}
+		Let 
+		\begin{itemize}
+			\item an input space $\mathcal{X}$
+			\item an output space $\mathcal{Y}$ 
+			\item a representation space $\mathcal{R}$
+			\item an explanation space $G$
+			\item a representation function $f:\mathcal{X}\to\mathcal{R}$
+			\item a classifier function $c:\mathcal{R}\to\mathcal{Y}$
+		\end{itemize}
+		
+		We want to explain a model $h = c\circ f$\\
+		by an explanation function $g:\mathcal{X}\times\mathcal{Y}\to G$\\
+		in terms of $g(x,h(x))$
+
+	\end{frame}
+	\begin{frame}[t]{Representation Space \& Explanation Space}{Consistency}
+		\begin{definition}[Consistent Representation]
+			Given a function $\beta: (0, \infty)\to (0, \infty)$ mapping distance in $\mathcal{R}$ into distance in $G$.\\
+			A representation $f$ is \underline{$\beta$-consistent} w.r.t. $g$ if
+			$$
+			\forall\epsilon>0\forall x_1, x_2 \in \mathcal{X}, \left|g(x_1, h(x_1)) - g(x_2,h(x_2))\right|\leqslant\epsilon \Rightarrow \left|f(x_1) - f(x_2)\right|\leqslant \beta(\epsilon)
+			$$
+		\end{definition}
+	\end{frame}
+	\begin{frame}[t]{Representation Space \& Explanation Space}{Explainability}
+		\begin{definition}[Explainable Representation]
+			Given a function $\gamma: (0, \infty)\to (0, \infty)$ mapping distance in $\mathcal{R}$ into distance in $G$.\\
+			A representation $f$ is \underline{$\gamma$-explainable} w.r.t. $g$ if
+			$$
+			\forall\epsilon>0\forall x_1, x_2 \in \mathcal{X}, \left|f(x_1) - f(x_2)\right|\leqslant\epsilon \Rightarrow  \left|g(x_1, h(x_1)) - g(x_2,h(x_2))\right|\leqslant\gamma(\epsilon)
+			$$
+		\end{definition}
+		
+		\pause\begin{definition}[Second-order Explainable Representation]
+			Given a function $\gamma: (0, \infty)\times(0, \infty)\to (0, \infty)$.\\
+			A representation $f$ is \underline{second-order $\gamma$-explainable} w.r.t. $g$ if
+			$$
+			\forall\epsilon_0\epsilon_1>0\forall x_1, x_2 \in \mathcal{X},
+			\left|f(x_1) - f(x_2)\right|\leqslant\epsilon_0
+			\wedge
+			\left|f_x(x_1) - f_x(x_2)\right|\leqslant\epsilon_1$$
+			$$
+			\Downarrow
+			$$
+			$$
+			\left|g(x_1, h(x_1)) - g(x_2,h(x_2))\right|\leqslant\gamma(\epsilon_0,\epsilon_1)
+			$$
+		\end{definition}
+	\end{frame}
+	\begin{frame}[t]{Representation Space \& Explanation Space}{Consistency Recall}
+		$$
+		\forall\epsilon>0\forall x_1, x_2 \in \mathcal{X}, \left|g(x_1, h(x_1)) - g(x_2,h(x_2))\right|\leqslant\epsilon \Rightarrow \left|\mathcolor{red}{f}(x_1) - \mathcolor{red}{f}(x_2)\right|\leqslant \beta(\epsilon)
+		$$
+		\begin{itemize}
+			\item What if the representation of our machine learning model is consistent, i.e. $h(x)=c(\mathcolor{red}{f}(x))$ where $\mathcolor{red}{f}$ is consistent?
+			
+			\item Let try: $\left|h(x_1) - h(x_2)\right| = \left|c(f(x_1)) - c(f(x_2))\right|$.
+			
+			\item What can connect between $\left|c(f(x_1)) - c(f(x_2))\right|$ and $\left|f(x_1) - f(x_2)\right|$?
+		\end{itemize}
+		
+		\begin{definition}[$l$-Lipschitz continuous]
+			A function $L$ is $l$-Lipschitz continuous if
+			$$
+			\forall x_1, x_2, \left|F(x_1)-F(x_2)\right|\leqslant l \left|x_1 - x_2\right|
+			$$
+		\end{definition}
+	\end{frame}
+	\begin{frame}[t]{Representation Space \& Explanation Space}{Consistency representation and Lipschitz classifier}
+		\begin{theorem}[Lipschitz $\circ$ Consistent is Consistent]
+			Given a model $h=c\circ f : \mathcal{X}\to\mathcal{Y}$ with an explanation function $g:\mathcal{X}\times\mathcal{Y}\to G$,\\
+			if $f$ is $\beta$-consistent w.r.t. $g$ and $c$ is $l$-Lipschitz continuous,\\
+			then $h$ is $l\beta$-consistent w.r.t. $g$.
+		\end{theorem}
+		Let's prove!
+	\end{frame}
+	
+	
+\end{document}
